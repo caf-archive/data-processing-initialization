@@ -53,9 +53,9 @@
     </developers>
     
     <properties>
-        <caf.container.databases.name>${dockerDataProcessingOrg}data-processing-databases:1.4.0-SNAPSHOT</caf.container.databases.name>
-        <caf.processing.service.version>1.4.0-SNAPSHOT</caf.processing.service.version>
-        <caf.container.processing.service.name>${dockerDataProcessingOrg}processing-service:1.4.0-SNAPSHOT</caf.container.processing.service.name>
+        <caf.container.databases.name>cafdataprocessing/data-processing-databases:1.3.0</caf.container.databases.name>
+        <caf.processing.service.version>1.3.0-70</caf.processing.service.version>
+        <caf.container.processing.service.name>cafdataprocessing/processing-service:1.3.0</caf.container.processing.service.name>
         <caf.boilerplate.service.version>2.2.0-72</caf.boilerplate.service.version>
         <caf.container.policy.admin.name>cafdataprocessing/policy-admin-elasticsearch:1.0.0</caf.container.policy.admin.name>
         <dockerHubOrganization>cafdataprocessing</dockerHubOrganization>
