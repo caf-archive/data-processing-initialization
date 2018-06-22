@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2015-2017 EntIT Software LLC, a Micro Focus company.
+    Copyright 2017-2018 Micro Focus or one of its affiliates.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -23,20 +23,16 @@
     
     <parent>
         <groupId>com.github.cafapi</groupId>
-        <artifactId>caf-common</artifactId>
-        <version>1.13.0-239</version>
-        <relativePath />
+        <artifactId>caf-common-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
-    
-    <organization>
-        <name>EntIT Software LLC, a Micro Focus company</name>
-        <url>https://www.microfocus.com</url>
-    </organization>
 
     <groupId>com.github.cafdataprocessing</groupId>
     <artifactId>data-processing-initialization</artifactId>
     <version>2.1.0-SNAPSHOT</version>
-    
+
+    <inceptionYear>2017</inceptionYear>
+
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -58,6 +54,8 @@
         <caf.container.processing.service.name>cafdataprocessing/processing-service:1.3.0</caf.container.processing.service.name>
         <caf.boilerplate.service.version>2.2.0-72</caf.boilerplate.service.version>
         <caf.container.policy.admin.name>cafdataprocessing/policy-admin-elasticsearch:1.0.0</caf.container.policy.admin.name>
+        <copyrightYear>2018</copyrightYear>
+        <copyrightNotice>Copyright ${project.inceptionYear}-${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
         <dockerHubOrganization>cafdataprocessing</dockerHubOrganization>
         <dockerDataProcessingOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerDataProcessingOrg>
         <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
@@ -87,14 +85,17 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
+            <version>18.0</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
+            <version>2.4</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
+            <version>6.4</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
