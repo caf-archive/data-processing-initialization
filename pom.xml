@@ -69,9 +69,20 @@
         </internalHibernateConnectionstring>
         <processingServiceHost>http://${docker.host.address}:${processingServicePort}</processingServiceHost>
         <processingServiceUrl>${processingServiceHost}/data-processing-service/v1</processingServiceUrl>
+        <enforceCorrectDependencies>true</enforceCorrectDependencies>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.6.4</version>
+        </dependency>
         <dependency>
             <groupId>com.github.cafdataprocessing</groupId>
             <artifactId>processing-service-client</artifactId>
@@ -88,9 +99,14 @@
             <version>18.0</version>
         </dependency>
         <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.4</version>
+            <groupId>com.hpe.caf.boilerplate</groupId>
+            <artifactId>boilerplate-web-caller</artifactId>
+            <version>1.14.1-68</version>
+        </dependency>
+        <dependency>
+            <groupId> org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.7</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
