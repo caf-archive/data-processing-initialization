@@ -104,7 +104,7 @@
             <version>1.14.1-68</version>
         </dependency>
         <dependency>
-            <groupId> org.slf4j</groupId>
+            <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.7</version>
         </dependency>
